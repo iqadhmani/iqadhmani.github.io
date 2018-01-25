@@ -29,6 +29,7 @@ $(function() {
           email: email,
           message: message
         },
+	dataType: "json",
         cache: false,
         success: function() {
           // Success message
@@ -39,7 +40,6 @@ $(function() {
             .append("<strong>Your message has been sent. </strong>");
           $('#success > .alert-success')
             .append('</div>');
-		window.open("https://formspree.io/iqadhmani8823@conestogac.on.ca");
           //clear all fields
           $('#contactForm').trigger("reset");
         },
