@@ -29,7 +29,7 @@ $(function() {
           email: email,
           message: message
         },
-	//dataType: "json",
+	dataType: "json",
         cache: false,
         success: function() {
           // Success message
@@ -41,7 +41,7 @@ $(function() {
           $('#success > .alert-success')
             .append('</div>');
           //clear all fields
-          $('#contactForm').trigger("reset");
+          //$('#contactForm').trigger("reset");
         },
         error: function() {
           // Fail message
