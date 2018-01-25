@@ -37,11 +37,11 @@ $(function() {
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent 01. </strong>");
+            .append("<strong>Your message has been sent 02. </strong>");
           $('#success > .alert-success')
             .append('</div>');
           //clear all fields
-          //$('#contactForm').trigger("reset");
+          $('#contactForm').trigger("reset");
         },
         error: function() {
           // Fail message
