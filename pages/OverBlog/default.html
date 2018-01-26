@@ -1,0 +1,111 @@
+<!--
+Program ID: Major Assignment 1.
+Program Purpose: To make a website with style.
+Review History: Written - Ibrahim Qadhmani - March 7, 2017.
+-->
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>OverBlog</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+    
+    <body>
+		<section id="page"> <!-- Defining the #page section with the section tag -->
+		
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+                <hgroup>
+					<h1>OverBlog</h1>
+					<h3>Everything new about Overwatch game.</h3>
+				</hgroup>             
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                        <li><a href="#article1">Doomfist</a></li>
+                        <li><a href="#article2">New Hero</a></li>
+                        <li><a href="#article3">Season 4</a></li>
+						<li><a href="#article4">TV Series</a></li>
+                    </ul>
+					<!-- The next code is to apply an audio to the page with a script to make it start with 1% volume -->
+					<audio controls autoplay loop id="myaudio">
+						<source src="audio/ost.mp3" type="audio/mpeg">
+					</audio>
+					<script>
+						var audio = document.getElementById("myaudio");
+						audio.volume = 0.01;
+					</script>
+				</nav>
+            </header>
+			
+            <section> <!-- A new section with the articles -->
+				<!-- Article 1 start -->
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>Terry Crews Voicing Doomfist<a class="go_up" href="#" class="up"><img src="images/favicon.ico" width="50" height="50" title="Go up"></a></h2>
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">                    
+                    	<figure> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<a href="pages/crews.html"><img src="images/crews.jpg" alt="Terry Crews Image" width="500" height="300"></a>
+                        </figure>                        
+                        <p>It’s no secret to the Overwatch community that Terry Crews wants to be an Overwatch character.<br><br>
+						The Brooklyn Nine-Nine actor loves Blizzard. He has visited Blizzard HQ. He has written about it on his blog. He has loudly proclaimed that Overwatch is his favorite video game. He has commented about it on Reddit. He has tweeted about it. He even got the Rock to tweet about it.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 1 end -->
+				<!-- Article 2 start -->
+                <div class="line"></div>    
+                <article id="article2">
+                    <h2>Overwatch’s New Hero Is Orisa<a class="go_up" href="#" class="up"><img src="images/favicon.ico" width="50" height="50"title="Go up"></a></h2>  
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/orisa.html"><img src="images/orisa.png" alt="Orisa Image" width="500" height="300"></a>
+                        </figure>
+                        <p>Overwatch’s new and 24th hero is the robot tank Orisa, who fights with a “fusion driver,” or a projectile machine gun. In a developer update video, Overwatch game developer Jeff Kaplan says her weapon has more range than nearly any other tank hero. She’s currently on the PTR.<br><br>
+						The robot was created by the 11-year-old genius Efi Oladele, who crafted it from discarded defense robot parts in Numbani.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 2 end -->
+				<!-- Article 3 start -->
+                <div class="line"></div>                
+                <article id="article3">
+                    <h2>Season 4 Changes<a class="go_up" href="#" class="up"><img src="images/favicon.ico" width="50" height="50" title="Go up"></a></h2>                   
+                    <div class="line"></div>                   
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/season4.html"><img src="images/season4.jpg" alt="Overwatch Season 4 Image" width="500" height="300"></a>
+                        </figure>                       
+                        <p>Season 4 of Overwatch is underway, and Blizzard has once again tweaked a few mechanics in the game, including Skill Ratings.<br><br>
+						The most recent season of Overwatch Competitive Play has begun, and as usual, Blizzard has made some changes to the way that the game works in its ranked mode. First and foremost is the almost inevitable change to the Skill Rating system.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>
+				<!-- Article 3 end -->
+				<!-- Article 4 start -->
+                <div class="line"></div>               
+                <article id="article4">
+                    <h2>Overwatch TV Series is Possible<a class="go_up" href="#" class="up"><img src="images/favicon.ico" width="50" height="50" title="Go up"></a></h2>                   
+                    <div class="line"></div>                   
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/series.html"><img src="images/series.png" alt="Winston Animated Short Image" width="500" height="300"></a>
+                        </figure>                        
+                        <p>Given the success of Overwatch, and how it's captivated #Blizzard fans old and new, it isn't too surprising that a TV or film adaptation might be on the cards. Film and TV adaptations of video games are becoming increasingly common: Silent Hill and Resident Evil both became film franchises in their own right, while on the TV front Skylander's: Academy has just launched on Netflix, and we've even seen an anime series based off the video game series Danganronpa.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>             
+				<!-- Article 4 end -->
+            </section>
+
+        <footer> <!-- Marking the footer section -->
+           <p>&copy; 2017 | <a href="https://playoverwatch.com">Overwatch Official Website</a> | <a href="mailto:ibqadamani@gmail.com">Contact Me</a></p> <!-- Change the copyright notice --> 
+        </footer>
+            
+		</section> <!-- Closing the #page section -->
+    </body>
+	
+</html>
